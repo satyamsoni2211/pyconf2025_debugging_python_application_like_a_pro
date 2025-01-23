@@ -1,0 +1,1 @@
+docker run -p 8000:8000 -p 55201:5678 containers:latest

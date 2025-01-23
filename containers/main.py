@@ -1,4 +1,4 @@
-# import debugpy
+import debugpy
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -13,6 +13,6 @@ if __name__ == "__main__":
     # debugpy.listen(("0.0.0.0", 5678))
     # print("Waiting for debugger attach...")
     # debugpy.wait_for_client()  # Only include this line if you want to pause execution until the debugger is attached
-    
+
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)

@@ -10,6 +10,7 @@ python = "^3.12"
 fastapi = "^0.115.7"
 uvicorn = "^0.34.0"
 debugpy = "^1.8.12"
+pydevd-pycharm = "^243.23654.74"
 
 
 [build-system]
