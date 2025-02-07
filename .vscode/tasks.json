@@ -7,9 +7,10 @@
 			"platform": "python",
 			"dockerBuild": {
 				"tag": "containers:latest",
-				"dockerfile": "${workspaceFolder}/Dockerfile",
-				"context": "${workspaceFolder}",
-				"pull": true
+				"dockerfile": "${workspaceFolder}/containers/Dockerfile",
+				"context": "${workspaceFolder}/containers",
+				"pull": true,
+				
 			}
 		},
 		{

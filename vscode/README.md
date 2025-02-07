@@ -13,6 +13,8 @@ footer: ""
 - Utilize VS Code’s debugging interface effectively.
 - Debug Python applications in diverse environments.
 
+Reference Document: [Python Debugging in VSCode](https://code.visualstudio.com/docs/python/debugging) & [Debugging Basics](https://code.visualstudio.com/docs/editor/debugging)
+
 ---
 
 # Configuring Debugging
@@ -25,14 +27,17 @@ footer: ""
    - Select the environment (e.g., Python).
 3. Customize the `launch.json` as needed.
 
-### Django or Flask Applications
+---
+
+### FastAPI or Djago or Flask Applications
 1. Install extensions:
    - **Python** (by Microsoft).
-   - **FastApi** or **Flask** support, if needed.
-2. Modify `launch.json`:
-   - Set the program to your application’s entry point.
-   - Add necessary arguments (`--host`, `--port`, etc.).
+2. Select Python interpreter for your project ( Virtual Environment )
 3. Ensure your app’s dependencies are installed.
+4. Modify `launch.json`:
+   - Either point launch target to execute your script ( `main.py` file) 
+   or
+   - Call Module Flask or FastAPI
 
 ---
 

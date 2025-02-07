@@ -1,0 +1,13 @@
+[project]
+name = "pyconf2025-debugging-python-application-like-a-pro"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "debugpy>=1.8.12",
+    "django>=5.1.6",
+    "fastapi[standard]>=0.115.8",
+    "flask>=3.1.0",
+    "uvicorn>=0.34.0",
+]
