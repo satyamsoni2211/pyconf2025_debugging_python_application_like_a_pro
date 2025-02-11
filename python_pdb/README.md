@@ -1,7 +1,20 @@
 ---
 marp: true
 title: PDB Debugger
+theme: gaia
+paginate: true
+class:
+  - lead
+  - invert
+header: 'Debugging Python Applications Like a Pro'
+footer: 'Satyam Soni | [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/-satyamsoni/)'
 ---
+
+<style>
+section {
+   font-size: 27px;
+}
+</style>
 
 # PDB Debugger
 
@@ -24,18 +37,19 @@ The **PDB Debugger** is a vital tool for Python developers, offering an interact
 
 - **Breakpoint Function**: Python 3.7 introduced the built-in `breakpoint()` function, which simplifies the process of entering the debugger. By default, it calls `pdb.set_trace()`, but it can be customized via the `PYTHONBREAKPOINT` environment variable.
 - **Improved Display of Tracebacks**: The tracebacks in Python 3.7 are more informative, showing the variables involved in the error, which aids in quicker debugging.
-- **Data Classes**: While not directly related to PDB, the introduction of data classes in Python 3.7 can make debugging easier by providing a clearer structure for data, which PDB can then inspect.
-- **Context Variables**: Python 3.7 introduced context variables, which can be useful in asynchronous programming. PDB can be used to inspect these context variables during debugging sessions.
 
 ---
 
 ## Key Features
 
-- Command-line interface for:
-  - Setting breakpoints
-  - Stepping through code
-  - Inspecting variables
-  - Evaluating expressions
+ Command-line interface for
+
+- Setting breakpoints
+- Stepping through code
+- Inspecting variables
+- Evaluating expressions
+  
+and much more ...
 
 ---
 
@@ -49,7 +63,6 @@ The **PDB Debugger** is a vital tool for Python developers, offering an interact
 
 # Invoking PDB
 
-## How to Use
 
 - Directly from the command line.
 - Integrated into Python scripts using the `pdb` module.
@@ -73,6 +86,7 @@ The **PDB Debugger** is a vital tool for Python developers, offering an interact
 | `b`     | Set a breakpoint. |
 | `c`     | Continue execution. |
 | `s`     | Step into function. |
+| `r`     | Return from Function. |
 
 ---
 
@@ -158,16 +172,6 @@ The **PDB Debugger** is a vital tool for Python developers, offering an interact
 
 - **Usage**: `h [command]`
 - **Description**: Displays help for a specific command.
-
-### Example Usage
-
-- **General Help**: `h`
-  - Displays a list of all available commands with brief descriptions.
-
-- **Specific Command Help**: `h n`
-  - Displays detailed help for the `next` command.
-
-This command is particularly useful for beginners or when you need a quick reminder of what a command does.
 
 ---
 

@@ -7,7 +7,9 @@ In today’s fast-paced development landscape, delivering robust Python applicat
 ## What’s Covered
 
 ### 1. Mastering PDB
+
 Dive deep into Python’s built-in debugger, PDB. Learn how to:
+
 - Set breakpoints.
 - Inspect variables.
 - Step through code.
@@ -15,24 +17,29 @@ Dive deep into Python’s built-in debugger, PDB. Learn how to:
 - Important commands.
 
 ### 2. Debugging in Visual Studio Code
+
 - Configure debugging for diverse project types, from simple scripts to complex FastAPI or Flask applications.
 - Harness the power of VSCode’s intuitive debugging interface to:
-  - Set breakpoints.
-  - Attach to running processes.
-  - Debug Python applications in any environment.
-  - Tweak configurations.
+  - Using basic Debugger.
+  - Creating custom debugging configurations.
+  - Debugging different type of applications.
+  - Attaching Debugger to running processes.
+  - Tweak configurations like Environment, working directory, console etc.
+  - Conditional Breakpoints.
   - Analysis Call Stacks.
-  - Context Browser.
-  - Expression evaluation.
+  - Debugging Console for expression evaluation.
 
 ### 3. Debugging in PyCharm
+
 - Explore PyCharm’s advanced debugging tools:
   - Inline variable analysis.
   - Conditional breakpoints.
-  - Thread debugging.
-- Debug both local projects and remote environments like a pro.
+  - Call Stack Analysis
+  - Expression Evaluation.
+  - Tweaking configuration for custon debugging.
 
-### 4. Debugging Containers
+### 4. Debugging Containers ( VSCode )
+
 - Uncover the mysteries of debugging Python applications running inside Docker containers.
 - Learn how to:
   - Connect your debugger.
@@ -40,6 +47,7 @@ Dive deep into Python’s built-in debugger, PDB. Learn how to:
   - Resolve issues spanning both code and container configurations.
 
 ## Why This Matters
+
 Debugging isn’t just a skill; it’s an art that can:
 
 - Save hours of frustration.

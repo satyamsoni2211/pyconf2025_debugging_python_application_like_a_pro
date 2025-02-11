@@ -1,10 +1,18 @@
 ---
 marp: true
-theme: default
+theme: gaia
 paginate: true
-header: "Debugging in Visual Studio Code"
-footer: ""
+class:
+  - lead
+  - invert
+header: 'Debugging Python Applications Like a Pro'
+footer: 'Satyam Soni | [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/-satyamsoni/)'
 ---
+<style>
+section {
+   font-size: 27px;
+}
+</style>
 
 # Debugging in Visual Studio Code
 
@@ -50,6 +58,8 @@ Reference Document: [Python Debugging in VSCode](https://code.visualstudio.com/d
 - **Watch**: Monitor expressions in real-time.
 - **Debug Console**: Execute commands during debugging.
 
+---
+
 ### Setting Breakpoints
 1. Click in the margin next to a line number.
 2. Conditional breakpoints:
@@ -60,7 +70,6 @@ Reference Document: [Python Debugging in VSCode](https://code.visualstudio.com/d
 
 # Attaching to Running Processes
 
-### Steps
 1. Identify the process ID (PID):
    - Use `ps` (Linux/Mac) or Task Manager (Windows).
    - Alternatively, use a debugger tool.
@@ -79,6 +88,8 @@ Reference Document: [Python Debugging in VSCode](https://code.visualstudio.com/d
 2. Configure the virtual environment:
    - Activate it.
    - Install dependencies (e.g., Flask, Django).
+
+---
 
 ### Remote Debugging
 1. Install **ptvsd** or **debugpy** for remote access.
