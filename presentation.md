@@ -65,13 +65,42 @@ Dive deep into Python’s built-in debugger, PDB. Learn how to:
   - Call stack analysis.
 
 ---
+<style scoped>
+section {
+   font-size: 24px;
+}
+</style>
 
 # Debugging Containers (VSCode)
 
+
+
 Uncover the mysteries of debugging Python applications running inside Docker containers.
 
-- Connect your debugger.
-- Trace code running in isolated environments.
+- Set up Docker support in VSCode.
+- Configure your project to use Docker as a remote interpreter.
+- Attach the debugger to a running container.
+- Inspect and modify code execution in real-time.
+- Resolve issues that arise from containerized environments.
+
+---
+
+<style scoped>
+section {
+   font-size: 24px;
+}
+</style>
+
+# Debugging Containers (PyCharm)
+
+Explore how to debug Python applications running inside Docker containers using PyCharm.
+
+- Set up Docker support in PyCharm.
+- Configure your project to use Docker as a remote interpreter.
+- Attach the debugger to a running container.
+- Inspect and modify code execution in real-time.
+- Resolve issues that arise from containerized environments.
+
 
 ---
 
@@ -81,6 +110,6 @@ Take control of your debugging process and level up your Python development game
 
 ---
 
-# Q&A
+# Questions?
 
-Feel free to ask any questions!
+Thank you!

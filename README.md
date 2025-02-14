@@ -2,7 +2,7 @@
 
 In today’s fast-paced development landscape, delivering robust Python applications requires more than just writing great code—it demands the ability to identify and resolve issues with precision and speed. This is where professional debugging comes into play.
 
-**"Debugging Python Applications Like a Pro"** is a concise, action-packed guide to mastering essential debugging techniques. Whether you’re a solo developer or part of a team, this pitch-perfect approach will elevate your problem-solving skills and make debugging a seamless part of your workflow.
+**"Debugging Python Applications Like a Pro"** is a concise, action-packed guide to mastering essential debugging techniques. Whether you’re a solo developer or part of a team, this approach will elevate your problem-solving skills and make debugging a seamless part of your workflow.
 
 ## What’s Covered
 
@@ -14,37 +14,48 @@ Dive deep into Python’s built-in debugger, PDB. Learn how to:
 - Inspect variables.
 - Step through code.
 - Execute commands in real-time to uncover the root cause of any issue.
-- Important commands.
+- Utilize important commands.
 
 ### 2. Debugging in Visual Studio Code
 
 - Configure debugging for diverse project types, from simple scripts to complex FastAPI or Flask applications.
 - Harness the power of VSCode’s intuitive debugging interface to:
-  - Using basic Debugger.
-  - Creating custom debugging configurations.
-  - Debugging different type of applications.
-  - Attaching Debugger to running processes.
-  - Tweak configurations like Environment, working directory, console etc.
-  - Conditional Breakpoints.
-  - Analysis Call Stacks.
-  - Debugging Console for expression evaluation.
+  - Use the basic debugger.
+  - Create custom debugging configurations.
+  - Debug different types of applications.
+  - Attach the debugger to running processes.
+  - Tweak configurations such as environment, working directory, and console.
+  - Set conditional breakpoints.
+  - Analyze call stacks.
+  - Use the debugging console for expression evaluation.
 
 ### 3. Debugging in PyCharm
 
 - Explore PyCharm’s advanced debugging tools:
   - Inline variable analysis.
   - Conditional breakpoints.
-  - Call Stack Analysis
-  - Expression Evaluation.
-  - Tweaking configuration for custon debugging.
+  - Call stack analysis.
+  - Expression evaluation.
+  - Tweak configurations for custom debugging.
 
-### 4. Debugging Containers ( VSCode )
+### 4. Debugging Containers (VSCode)
 
 - Uncover the mysteries of debugging Python applications running inside Docker containers.
 - Learn how to:
   - Connect your debugger.
   - Trace code running in isolated environments.
   - Resolve issues spanning both code and container configurations.
+
+### 5. Debugging Containers with PyCharm
+
+- Leverage PyCharm’s capabilities to debug Python applications within Docker containers.
+- Learn how to:
+  - Set up Docker support in PyCharm.
+  - Configure your project to use Docker as a remote interpreter.
+  - Attach the debugger to a running container.
+  - Inspect and modify code execution in real-time.
+  - Resolve issues that arise from containerized environments.
+
 
 ## Why This Matters
 
