@@ -6,11 +6,10 @@
 			"label": "docker-build",
 			"platform": "python",
 			"dockerBuild": {
-				"tag": "containers:latest",
+				"tag": "pyconf2025debuggingpythonapplicationlikeapro:latest",
 				"dockerfile": "${workspaceFolder}/containers/Dockerfile",
 				"context": "${workspaceFolder}/containers",
-				"pull": true,
-				
+				"pull": true
 			}
 		},
 		{

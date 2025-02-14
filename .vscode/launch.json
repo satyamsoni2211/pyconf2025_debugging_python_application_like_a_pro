@@ -1,25 +1,9 @@
 {
   "configurations": [
     {
-      "name": "Docker: Python - Fastapi",
-      "type": "docker",
-      "request": "launch",
-      "preLaunchTask": "docker-run: debug",
-      "python": {
-        "pathMappings": [
-          {
-            "localRoot": "${workspaceFolder}/containers",
-            "remoteRoot": "/app"
-          }
-        ],
-        "projectType": "fastapi"
-      }
-    },
-    {
       "name": "Python Debugger: Remote Attach",
       "type": "debugpy",
       "request": "attach",
-      // "preLaunchTask": "docker-run: debugpy",
       "connect": {
         "host": "localhost",
         "port": 55201
@@ -37,6 +21,21 @@
       "request": "launch",
       "program": "${workspaceFolder}/python_pdb/main.py",
       "console": "integratedTerminal"
+    },
+    {
+      "name": "Docker: Python - Fastapi",
+      "type": "docker",
+      "request": "launch",
+      "preLaunchTask": "docker-run: debug",
+      "python": {
+        "pathMappings": [
+          {
+            "localRoot": "${workspaceFolder}/containers",
+            "remoteRoot": "/app"
+          }
+        ],
+        "projectType": "fastapi"
+      }
     }
   ]
 }
