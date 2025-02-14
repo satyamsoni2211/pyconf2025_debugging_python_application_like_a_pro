@@ -62,7 +62,7 @@ Dive deep into Python’s built-in debugger, PDB. Learn how to:
 - Explore PyCharm’s advanced debugging tools:
   - Inline variable analysis.
   - Conditional breakpoints.
-  - Call Stack Analysis.
+  - Call stack analysis.
 
 ---
 

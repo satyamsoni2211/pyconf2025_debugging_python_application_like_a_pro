@@ -14,50 +14,50 @@ section {
 }
 </style>
 
-# Debugging in Visual Studio Code
+# Debugging in PyCharm
 
 ### Overview
 - Configure debugging for various project types.
-- Utilize PyCharms’s debugging interface effectively.
+- Utilize PyCharm’s debugging interface effectively.
 - Debug Python applications in diverse environments.
 
-Reference Document: [Python Debugging in Pycharm](https://www.jetbrains.com/pycharm/features/debugger.html)
+Reference Document: [Python Debugging in PyCharm](https://www.jetbrains.com/pycharm/features/debugger.html)
 
 ---
 
 # Configuring Debugging
 
 ### Simple Scripts
-1. Open your Project in PyCharm.
-2. Select your interpreter (Pycharm automatically detects).
-2. Open your script and go to run/debug configurations and select `current file`.
-3. Click on Debugger logo.
+1. Open your project in PyCharm.
+2. Select your interpreter (PyCharm automatically detects it).
+3. Open your script, go to run/debug configurations, and select `current file`.
+4. Click on the debugger logo.
 
 ![w:600 h:200 right](https://www.jetbrains.com/pycharm/features/screenshots/debugger.png)
 
 ---
 
-### Creating launch configurations
+### Creating Launch Configurations
 
-1. Go to debugger toolbar and in dropdown select `Edit Configurations`.
-2. Choose Type of configuration you would like to select.
+1. Go to the debugger toolbar and in the dropdown select `Edit Configurations`.
+2. Choose the type of configuration you would like to select.
 3. Fill in the required details and save.
-4. Click on debugger logo to start debugger.
+4. Click on the debugger logo to start debugging.
 
-![imgae](./images/image.png)
+![image](./images/image.png)
 
 ---
 
-### FastAPI or Djago or Flask Applications
+### FastAPI, Django, or Flask Applications
 
-1. Select Python interpreter for your project ( Virtual Environment )
+1. Select the Python interpreter for your project (Virtual Environment).
 2. Ensure your app’s dependencies are installed.
-3. Select approriate debugging configuration.
-4. Click on debugger logo to start debugging.
+3. Select the appropriate debugging configuration.
+4. Click on the debugger logo to start debugging.
 
 ---
 
-# PyCharms’s Debugging Interface
+# PyCharm’s Debugging Interface
 
 ### Key Features
 - **Breakpoints**: Pause execution at specific lines.
@@ -75,7 +75,6 @@ Reference Document: [Python Debugging in Pycharm](https://www.jetbrains.com/pych
    - Add conditions like `x > 5`.
 
 ---
-
 
 # Summary
 

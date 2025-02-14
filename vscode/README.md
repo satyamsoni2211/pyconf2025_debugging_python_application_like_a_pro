@@ -37,15 +37,15 @@ Reference Document: [Python Debugging in VSCode](https://code.visualstudio.com/d
 
 ---
 
-### FastAPI or Djago or Flask Applications
+### FastAPI, Django, or Flask Applications
 1. Install extensions:
    - **Python** (by Microsoft).
-2. Select Python interpreter for your project ( Virtual Environment )
+2. Select the Python interpreter for your project (Virtual Environment).
 3. Ensure your app’s dependencies are installed.
 4. Modify `launch.json`:
-   - Either point launch target to execute your script ( `main.py` file) 
+   - Either point the launch target to execute your script (`main.py` file) 
    or
-   - Call Module Flask or FastAPI
+   - Call the module Flask or FastAPI.
 
 ---
 

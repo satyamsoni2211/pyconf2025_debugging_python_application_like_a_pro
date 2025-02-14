@@ -20,9 +20,7 @@ section {
 
 ## Introduction
 
-
 The **PDB Debugger** is a vital tool for Python developers, offering an interactive command-line interface to debug code. It allows you to set breakpoints, step through execution, and inspect variables, making it easier to identify and fix bugs efficiently.
-
 
 ---
 
@@ -42,14 +40,14 @@ The **PDB Debugger** is a vital tool for Python developers, offering an interact
 
 ## Key Features
 
- Command-line interface for
+Command-line interface for:
 
 - Setting breakpoints
 - Stepping through code
 - Inspecting variables
 - Evaluating expressions
-  
-and much more ...
+
+and much more...
 
 ---
 
@@ -62,7 +60,6 @@ and much more ...
 ---
 
 # Invoking PDB
-
 
 - Directly from the command line.
 - Integrated into Python scripts using the `pdb` module.
@@ -86,7 +83,7 @@ and much more ...
 | `b`     | Set a breakpoint. |
 | `c`     | Continue execution. |
 | `s`     | Step into function. |
-| `r`     | Return from Function. |
+| `r`     | Return from function. |
 
 ---
 
@@ -178,4 +175,4 @@ and much more ...
 # Conclusion
 
 - PDB is a vital tool for Python developers.
-- Enhances debugging capabilities and code quality.
+- Enhances debugging capabilities and code quality. 

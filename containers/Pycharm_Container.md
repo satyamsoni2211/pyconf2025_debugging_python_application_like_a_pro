@@ -14,33 +14,29 @@ section {
 }
 </style>
 
-# Debugging Containers in PyCharm.
+# Debugging Containers in PyCharm
 
 ---
 
-### Adding remote interpreter.
+### Adding a Remote Interpreter
 
-1. Select add new interpreter on the bottom right bar.
-2. Select On Docker and then select your docker file and context folder.
-3. If required you can provide additional options like tag and other variables.
-4. On clicking next, this would create a docker container and inspect it.
+1. Select "Add New Interpreter" on the bottom right bar.
+2. Choose "On Docker" and then select your Docker file and context folder.
+3. If required, provide additional options like tags and other variables.
+4. Click "Next" to create and inspect a Docker container.
 
 ![add new interpreter](./images/add_interpreter.png)
-
-
-
-
 
 ---
 
 ### Adding Debugging Configuration
 
-1. Select remote interpreter setup in previous step.
-2. Select `Edit Configurations` on Debug Tab and Add a new configuration.
-3. Select approriate module or requirements ( FastAPI, Flask, Django, Script ).
-4. Since remote interpreter is selected, it will automatically add Docker configuration to debugging configuration.
-5. Save and click on debug.
-6. PyCharm will start a new docker container and attach debugger to it. (Pycharm uses Pydevd)
+1. Use the remote interpreter setup from the previous step.
+2. Select "Edit Configurations" on the Debug tab and add a new configuration.
+3. Choose the appropriate module or requirements (FastAPI, Flask, Django, Script).
+4. The Docker configuration will automatically be added to the debugging configuration.
+5. Save and click "Debug."
+6. PyCharm will start a new Docker container and attach the debugger to it (PyCharm uses Pydevd).
 
 ![debugger](./images/image.png)
 

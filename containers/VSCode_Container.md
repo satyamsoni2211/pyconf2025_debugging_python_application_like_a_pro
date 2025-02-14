@@ -16,9 +16,7 @@ section {
 
 # Container Debugging in Visual Studio Code
 
-
-
-### Remote Debugging ( manual )
+### Remote Debugging (Manual)
 
 1. Install **ptvsd** or **debugpy** for remote access.
 2. Configure the target application to accept debugger connections.
@@ -26,7 +24,7 @@ section {
 
 ---
 
-### Remote Debugging witth configurations.
+### Remote Debugging with Configurations
 
 1. Go to settings and select `Docker: Initialize for Debugging`.
 2. Select the type of module you want to debug and fill in the details.
@@ -34,7 +32,6 @@ section {
 4. Click on debug and start debugging your container.
 
 ![debug](./images/vscode_settings.png)
-
 
 ---
 
