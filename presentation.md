@@ -17,11 +17,11 @@ section {
 
 # Debugging Python Applications Like a Pro
 
-In today’s fast-paced development landscape, delivering robust Python applications requires more than just writing great code—it demands the ability to identify and resolve issues with precision and speed.
+In the world of coding, bugs can pop up unexpectedly, making it important to not just write great Python applications but also to find and fix those pesky issues. Mastering debugging is key—after all, no one wants their app to crash unexpectedly!
 
 ---
 
-# About Me
+## About Me
 
 A seasoned Python developer with 8+ years of experience across diverse domains and frameworks. 
 As a Technical Manager at SenecaGlobal, I specialize in delivering comprehensive Python-based full-stack solutions. 
@@ -29,7 +29,21 @@ An active open-source contributor, I have published several libraries on PyPI, i
 
 ---
 
-# Why This Matters
+## Why is `Debugging` important 
+
+- Approximately 85-90% of developers rely on `print` statements for code tracing.
+- Code modifications often result in unexpected errors.
+- Lack of understanding of the call stack.
+- Significant time is spent diagnosing issues.
+
+Moreover,
+
+Errors remain elusive...
+This can be quite frustrating 🤯, don't you agree?
+
+---
+
+## Why This Matters
 
 Debugging isn’t just a skill; it’s an art that can:
 
@@ -39,68 +53,53 @@ Debugging isn’t just a skill; it’s an art that can:
 
 ---
 
-# Mastering PDB
-
-Dive deep into Python’s built-in debugger, PDB. Learn how to:
-
-- Set breakpoints.
-- Inspect variables.
-- Step through code.
-- Execute commands in real-time to uncover the root cause of any issue.
+# Debugging Mind Map ( Covered throughout course)
 
 ---
 
-# Debugging in Visual Studio Code
+## Mastering PDB
 
-- Configure debugging for diverse project types.
-- Harness the power of VSCode’s intuitive debugging interface.
-
----
-
-# Debugging in PyCharm
-
-- Explore PyCharm’s advanced debugging tools:
-  - Inline variable analysis.
-  - Conditional breakpoints.
-  - Call stack analysis.
-
----
-<style scoped>
-section {
-   font-size: 24px;
-}
-</style>
-
-# Debugging Containers (VSCode)
-
-
-
-Uncover the mysteries of debugging Python applications running inside Docker containers.
-
-- Set up Docker support in VSCode.
-- Configure your project to use Docker as a remote interpreter.
-- Attach the debugger to a running container.
-- Inspect and modify code execution in real-time.
-- Resolve issues that arise from containerized environments.
+- **Breakpoints**: Set breakpoints to pause execution.
+- **Inspect Variables**: Examine variable states.
+- **Step Through Code**: Navigate through code execution.
+- **Execute Commands**: Run commands in real-time.
 
 ---
 
-<style scoped>
-section {
-   font-size: 24px;
-}
-</style>
+## Debugging in Visual Studio Code
 
-# Debugging Containers (PyCharm)
+- **Diverse Project Types**: Configure for various projects.
+- **Intuitive Interface**: Utilize VSCode’s debugging tools.
 
-Explore how to debug Python applications running inside Docker containers using PyCharm.
+---
 
-- Set up Docker support in PyCharm.
-- Configure your project to use Docker as a remote interpreter.
-- Attach the debugger to a running container.
-- Inspect and modify code execution in real-time.
-- Resolve issues that arise from containerized environments.
+## Debugging in PyCharm
 
+- **Advanced Tools**:
+  - Inline Variable Analysis
+  - Conditional Breakpoints
+  - Call Stack Analysis
+
+---
+
+## Debugging Containers (VSCode)
+
+- **VSCode**:
+  - Docker Support Setup
+  - Remote Interpreter Configuration
+  - Attach Debugger to Container
+  - Real-time Code Inspection
+  - Resolve Container Issues
+
+---
+## Debugging Containers (PyCharm)
+
+- **PyCharm**:
+  - Docker Support Setup
+  - Remote Interpreter Configuration
+  - Attach Debugger to Container
+  - Real-time Code Inspection
+  - Resolve Container Issues
 
 ---
 
