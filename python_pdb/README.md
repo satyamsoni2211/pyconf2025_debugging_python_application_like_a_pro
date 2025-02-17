@@ -21,6 +21,7 @@ section {
 ## Introduction
 
 The **PDB Debugger** is a vital tool for Python developers, offering an interactive command-line interface to debug code. It allows you to set breakpoints, step through execution, and inspect variables, making it easier to identify and fix bugs efficiently.
+Documentation: [pdb](https://docs.python.org/3/library/pdb.html)
 
 ---
 
@@ -93,7 +94,9 @@ and much more...
 |---------|-------------|
 | `n`     | Next line. |
 | `l`     | List source code. |
-| `p`     | Print expression. |
+| `up`    | Move up in stack trace. |
+| `down`  | Move down in stack trace. |
+
 
 ---
 
@@ -101,6 +104,7 @@ and much more...
 
 | Command | Description |
 |---------|-------------|
+| `p`     | Print expression. |
 | `q`     | Quit debugger. |
 | `h`     | Help command. |
 | `w`     | Stack trace. |
@@ -133,7 +137,7 @@ and much more...
 ## Next (`n`)
 
 - **Usage**: `n`
-- **Description**: Steps to the next line in the current function.
+- **Description**: Steps to the next line in the current function. Difference between `next` and `step` is that `step` will enter function call stack while `next` will straightway execute it.
 
 ---
 

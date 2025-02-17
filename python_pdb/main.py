@@ -54,4 +54,5 @@ def delete(memo_id: int):
 
 
 if __name__ == "__main__":
+    breakpoint()
     app()
