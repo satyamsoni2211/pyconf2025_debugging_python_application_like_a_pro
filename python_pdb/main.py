@@ -1,27 +1,57 @@
-# create program for fibonacci sequence
+import typer
+from sqlalchemy import create_engine, Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+app = typer.Typer()
+Base = declarative_base()
 
 
-def fibonacci(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
+class Memo(Base):
+    __tablename__ = "memos"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    content = Column(String, nullable=False)
+
+
+engine = create_engine("sqlite:///memos.db")
+Base.metadata.create_all(engine)
+Session = sessionmaker(bind=engine)
+
+
+@app.command()
+def add(content: str):
+    """Add a new memo."""
+    session = Session()
+    new_memo = Memo(content=content)
+    session.add(new_memo)
+    session.commit()
+    session.close()
+    typer.echo("Memo added!")
+
+
+@app.command()
+def list():
+    """List all memos."""
+    session = Session()
+    memos = session.query(Memo).all()
+    session.close()
+    for memo in memos:
+        typer.echo(f"{memo.id}: {memo.content}")
+
+
+@app.command()
+def delete(memo_id: int):
+    """Delete a memo by its ID."""
+    session = Session()
+    memo = session.query(Memo).filter(Memo.id == memo_id).first()
+    if memo:
+        session.delete(memo)
+        session.commit()
+        typer.echo("Memo deleted!")
     else:
-        return fibonacci(n - 1) + fibonacci(n - 2)
+        typer.echo("Memo not found!")
+    session.close()
 
 
-breakpoint()
-print(fibonacci(10))
-
-# # create program for fibonacci sequence
-
-
-# def fibonacci(n):
-#     a, b = 0, 1
-#     for _ in range(n):
-#         a, b = b, a + b
-#     return a
-
-
-# breakpoint()
-# print(fibonacci(10))
+if __name__ == "__main__":
+    app()
