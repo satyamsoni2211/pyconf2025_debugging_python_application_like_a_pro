@@ -16,9 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from hello.views import home
-
+from hello.views import home, get_tasks, create_task, update_task_status
+from hello.open_api import schema_view
 urlpatterns = [
+    path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('admin/', admin.site.urls),
-    path('', home)
+    path('', home),
+    path('get_tasks/', get_tasks),
+    path('create_task/', create_task),
+    path('update_task/', update_task_status),
+    
 ]

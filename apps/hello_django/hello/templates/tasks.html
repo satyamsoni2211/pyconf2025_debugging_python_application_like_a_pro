@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      h1 {
+        color: #333;
+        margin: 0;
+      }
+      .add-task-btn {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .add-task-btn:hover {
+        background-color: #45a049;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      }
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+        color: #333;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      .complete-btn,
+      .cancel-btn {
+        width: 100px;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .complete-btn {
+        background-color: #4caf50;
+        color: white;
+      }
+      .complete-btn:hover {
+        background-color: #45a049;
+      }
+      .cancel-btn {
+        background-color: #d9534f;
+        color: white;
+      }
+      .cancel-btn:hover {
+        background-color: #c9302c;
+      }
+      .disabled-btn {
+        background-color: #ccc !important;
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1><a href="/">TODO</a></h1>
+      <button class="add-task-btn" onclick="window.location.href='/create_task'">Add Task</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Task Name</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for task in tasks %}
+        <tr>
+          <td>{{ task.id }}</td>
+          <td>{{ task.title }}</td>
+          <td>{{ task.description }}</td>
+          <td>{{ task.status }}</td>
+          <td>
+            <button
+              class="complete-btn {% if task.status != 'Pending' %}disabled-btn{% endif %}"
+              {% if task.status == 'Pending' %}
+                onclick="window.location.href='/update_task?task_id={{task.id}}&status=Completed'"
+              {% else %}
+                disabled
+              {% endif %}
+            >
+              Complete
+            </button>
+            <button
+              class="cancel-btn {% if task.status != 'Pending' %}disabled-btn{% endif %}"
+              {% if task.status == 'Pending' %}
+                onclick="window.location.href='/update_task?task_id={{task.id}}&status=Cancelled'"
+              {% else %}
+                disabled
+              {% endif %}
+            >
+              Cancelled
+            </button>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
