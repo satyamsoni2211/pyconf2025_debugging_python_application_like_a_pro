@@ -18,18 +18,16 @@ app.add_middleware(
 )
 
 
-
 Base.metadata.create_all(bind=engine)
 
 app.include_router(router)
 
 openapi_schema = get_openapi(
-        title="Library Management API",
-        version="1.0",
-        description="This is a simple API to manage books in a library",
-        routes=app.routes,
-        
-    )
+    title="Library Management API",
+    version="1.0",
+    description="This is a simple API to manage books in a library",
+    routes=app.routes,
+)
 app.openapi_schema = openapi_schema
 
 if __name__ == "__main__":
