@@ -1,9 +1,11 @@
 from django.db import models
 
+
 class Tasks(models.Model):
     """
     This table is used to store the tasks that need to be done.
     """
+
     title = models.CharField(max_length=255)
     description = models.TextField(blank=True)
     status = models.CharField(max_length=255, default="Pending")
