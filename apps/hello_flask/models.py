@@ -1,5 +1,6 @@
 from database import db
 
+
 class Salary(db.Model):
     __tablename__ = "salaries"
 
@@ -9,9 +10,4 @@ class Salary(db.Model):
     month = db.Column(db.String(20), nullable=False)
 
     def to_dict(self):
-        return {
-            "id": self.id,
-            "employee_name": self.employee_name,
-            "amount": self.amount,
-            "month": self.month
-        }
+        return {"id": self.id, "employee_name": self.employee_name, "amount": self.amount, "month": self.month}

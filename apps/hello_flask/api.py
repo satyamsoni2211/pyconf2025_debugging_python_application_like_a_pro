@@ -19,6 +19,7 @@ salary_model = api.model(
     },
 )
 
+
 @ns.route("/")
 class SalaryList(Resource):
     @ns.marshal_list_with(salary_model)
@@ -32,6 +33,7 @@ class SalaryList(Resource):
         """Create a new salary"""
         data = request.json
         return create_salary(data["employee_name"], data["amount"], data["month"]), 201
+
 
 # 2️⃣ Get, Update, Delete Salary
 @ns.route("/<int:salary_id>")
@@ -62,5 +64,6 @@ class SalaryResource(Resource):
         if not deleted_salary:
             api.abort(404, "Salary not found")
         return {}, 204
+
 
 api.add_namespace(ns)
