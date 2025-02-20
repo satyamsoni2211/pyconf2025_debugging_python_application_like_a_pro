@@ -11,19 +11,24 @@ def create_book(db: Session, title: str, author: str):
 
 
 def get_books(db: Session):
-    return db.query(Book).all()
+    # TODO: Fix this query
+    query = db.query(Book.title)
+    return query.all()
 
 
 def get_book(db: Session, book_id: int):
-    return db.query(Book).filter(Book.id == book_id).first()
+    # TODO: Fix this query
+    book = db.query(Book).filter(book_id == book_id).first()
+    return book
 
 
 def update_book(db: Session, book_id: int, title: str, author: str):
-    book = db.query(Book).filter(Book.id == book_id).first()
+    book = db.query(Book).filter(Book.id == book_id).one_or_none()
     if not book:
         return None
-    book.title = title
-    book.author = author
+    # TODO: Fix this update
+    book.title = author
+    book.author = title
     db.commit()
     db.refresh(book)
     return book
